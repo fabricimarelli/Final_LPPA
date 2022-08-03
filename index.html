@@ -22,9 +22,39 @@
 
         </header>
         
+        <div id="modal_nombre" class="modal_off">
+
+            <div class="modal-content">
+              <span class="close_nombre">&times;</span>
+              <p>Ingrese su nombre para comenzar la partida</p>
+            </div>
+          
+        </div> 
+
+        <section class="temporizador">
+            <div class="temp" id="minutos">00:</div>
+            <div class="temp" id="segundos">00.</div>
+            <div class="temp" id="milesimas">00</div>
+        </section>
         
         <section class="palabras_ingresadas" id="palabras_ingresadas">
+
+            <div class="palabra_ingresada" id="palabra_ingresada">
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+            </div>
             
+            <div class="palabra_ingresada" id="palabra_ingresada">
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+                <div class="letra" id="letra"></div>
+            </div>
+
             <div class="palabra_ingresada" id="palabra_ingresada">
                 <div class="letra" id="letra"></div>
                 <div class="letra" id="letra"></div>
@@ -47,22 +77,6 @@
                 <div class="letra" id="letra"></div>
                 <div class="letra" id="letra"></div>
                 <div class="letra" id="letra"></div>
-            </div>
-            
-            <div class="palabra_ingresada" id="palabra_ingresada">
-                <div class="letra" id="letra"></div>
-                <div class="letra" id="letra"></div>
-                <div class="letra" id="letra"></div>
-                <div class="letra" id="letra"></div>
-                <div class="letra" id="letra"></div>
-            </div>
-
-            <div class="palabra_ingresada" id="palabra_ingresada">
-                <div class="letra" id="letra">J</div>
-                <div class="letra" id="letra"></div>
-                <div class="letra" id="letra">M</div>
-                <div class="letra" id="letra">K</div>
-                <div class="letra" id="letra">X</div>
             </div>
 
         </section>
@@ -111,7 +125,16 @@
                 <button class="boton_especial" data-key="borrar">Borrar</button>
             </div>
         </section>
+        <div id="modal" class="modal_off">
 
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p class="apagado" id="gana">¡Felicidades! Adivinaste la palabra!!</p>
+              <p class="apagado" id="pierde">Perdiste burro</p>
+              <button class="boton_modal" data-key="jugar_nuevamente">Jugar otro!</button>
+            </div>
+          
+        </div>
         <footer>
             <p>Universidad Abierta Interamericana</p>
             <p>Año 2022</p>
