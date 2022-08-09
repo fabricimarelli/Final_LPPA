@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-</head>
-<body>
-    <header>
-        <h1>Pagina de contacto</h1>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles_contacto.css">
+        <script src="app_contacto.js"></script>
+        <title>Parcial 1</title>
+    </head>
+    <body>
+       <header class="header">
+            <h1>Formulario de contacto</h1> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2875/2875409.png" alt="Logo">
+       </header>
+       <section>
+            <div class="form-conteiner">
+                <form id="frm">
+                    
+                    <div class="text-box">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre">
+                        <p id="error-nombre" class="ocultar-error">Minimo 3 caracteres</p>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido">
+                        <p id="error-apellido" class="ocultar-error">Minimo 3 caracteres</p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="TuEmail@ejemplo.com">
+                        <p id="error-email" class="ocultar-error">Ingrese un email valido</p>
+                        
+                    <div class="comentarios"> 
+                        <label for="comentario">Comentario:</label>
+                        <textarea class="input_textarea" type="text" id="comentario" name="comentario" placeholder="Escriba aquí el comentario"></textarea>
+                    </div>  
+                    
+                    <div class="botones">
+                        <input type="submit" id="submit" name="submit" value="Enviar">
+                        <input type="reset" id="reset" name="reset">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <P>Fabrizio Cimarelli</P>
+        </footer>
+    </body>
 </html>
+
