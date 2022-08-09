@@ -36,6 +36,11 @@ h2{
     flex-direction: row;
 }
 
+.botones_guardar_cargar{
+    display: flex;
+    flex-direction: row;
+}
+
 .botones_header{
     display: flex;
     width: 100px;
@@ -46,7 +51,7 @@ h2{
     font-size: 16px;
     font-style: italic;
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 
